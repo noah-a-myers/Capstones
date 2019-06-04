@@ -6,7 +6,9 @@ namespace Exercises
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+            NumbersToWords myObject = new NumbersToWords();
+            Console.WriteLine(myObject.ConvertNumberToWords(893940));
+            Console.Read();
+        } 
     }
 }
