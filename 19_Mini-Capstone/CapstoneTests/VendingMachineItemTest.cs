@@ -34,25 +34,25 @@ namespace CapstoneTests
         [TestMethod]
         public void PriceTest()
         {
-            Assert.AreEqual("18.50", newItem.Price = "18.50");
-            Assert.AreEqual("2.25", newItem.Price = "2.25");
-            Assert.AreEqual(".95", newItem.Price = ".95");
-            Assert.AreEqual("1.30", newItem.Price = "1.30");
+            Assert.AreEqual(18.50M, newItem.Price = 18.50M);
+            Assert.AreEqual(2.25M, newItem.Price = 2.25M);
+            Assert.AreEqual(.95M, newItem.Price = .95M);
+            Assert.AreEqual(1.30M, newItem.Price = 1.30M);
         }
 
         [TestMethod]
         public void QuantityTest()
         {
-            Assert.AreEqual("5", newItem.Quantity);
-            Assert.AreEqual("1", newItem.Quantity = "1");
-            Assert.AreEqual("3", newItem.Quantity = "3");
-            Assert.AreEqual("0", newItem.Quantity = "0");
+            Assert.AreEqual(5, newItem.Quantity);
+            Assert.AreEqual(1, newItem.Quantity = 1);
+            Assert.AreEqual(3, newItem.Quantity = 3);
+            Assert.AreEqual(0, newItem.Quantity = 0);
         }
 
         [TestMethod]
         public void ConsumeTest()
         {
-            Assert.AreEqual("")
+            Assert.AreEqual("","");
         }
     }
 }
