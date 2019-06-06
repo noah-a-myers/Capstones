@@ -5,8 +5,10 @@ using System.Text;
 namespace Capstone.Classes
 {
     public class UserInterface
-    {
-        private VendingMachine vendingMachine = new VendingMachine(); 
+    { 
+
+        private VendingMachine vendingMachine = new VendingMachine();
+
 
         public void RunInterface()
         {
@@ -52,6 +54,9 @@ namespace Capstone.Classes
 
                     default:
                 }
+
+                Console.ReadLine();
+
             }
 
         }
