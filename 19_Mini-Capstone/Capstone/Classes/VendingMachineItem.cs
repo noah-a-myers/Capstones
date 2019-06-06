@@ -11,6 +11,7 @@ namespace Capstone.Classes
         public decimal Price { get; set; }
         public int Quantity { get; set; }
 
+<<<<<<< HEAD
         public string Consume()
         {
             if (Slot.Substring(0, 1) = "A")
@@ -60,5 +61,9 @@ namespace Capstone.Classes
         //D2|Little League Chew|0.95
         //D3|Chiclets|0.75
         //D4|Triplemint|0.75
+=======
+        // each slot represented here
+
+>>>>>>> 3c7d205c09ccc040bc17dd9f8b26bf6db3503ca2
     }
 }
