@@ -50,9 +50,36 @@ namespace CapstoneTests
         }
 
         [TestMethod]
-        public void ConsumeTest()
+        public void ConsumeStringTest()
         {
-            Assert.AreEqual("","");
+            newItem.Slot = "A5";
+            Assert.AreEqual("Crunch Crunch, Yum!", newItem.Consume());
+            newItem.Slot = "B2";
+            Assert.AreEqual("Munch Munch, Yum!", newItem.Consume());
+            newItem.Slot = "C7";
+            Assert.AreEqual("Glug Glug, Yum!", newItem.Consume());
+            newItem.Slot = "D9";
+            Assert.AreEqual("Chew Chew, Yum!", newItem.Consume());
+            newItem.Slot = "Z5";
+            Assert.AreEqual("Invalid Item", newItem.Consume());
+        }
+
+        [TestMethod]
+        public void ConsumeQuantityTest()
+        {
+            newItem.Slot = "B4";
+            Assert.AreEqual(5, newItem.Quantity);
+            newItem.Consume();
+            Assert.AreEqual(4, newItem.Quantity);
+            newItem.Consume();
+            Assert.AreEqual(3, newItem.Quantity);
+            newItem.Consume();
+            Assert.AreEqual(2, newItem.Quantity);
+            newItem.Consume();
+            Assert.AreEqual(1, newItem.Quantity);
+            newItem.Consume();
+            Assert.AreEqual(0, newItem.Quantity);
+
         }
     }
 }

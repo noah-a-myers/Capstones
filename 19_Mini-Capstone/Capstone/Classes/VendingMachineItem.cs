@@ -6,33 +6,34 @@ namespace Capstone.Classes
 {
     public class VendingMachineItem
     {
-
         public string Slot {get; set; }
         public string ProductName { get; set; }
         public decimal Price { get; set; }
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } = 5;
+        
+        
 
         public string Consume()
         {
-            if (Slot.Substring(0, 1) = "A")
+            if (Slot.Substring(0, 1) == "A")
             {
                 Quantity -= 1;
                 return "Crunch Crunch, Yum!";
             }
 
-            else if (Slot.Substring(0, 1) = "B")
+            else if (Slot.Substring(0, 1) == "B")
             {
                 Quantity -= 1;
                 return "Munch Munch, Yum!";
             }
 
-            else if (Slot.Substring(0, 1) = "C")
+            else if (Slot.Substring(0, 1) == "C")
             {
                 Quantity -= 1;
                 return "Glug Glug, Yum!";
             }
 
-            else if (Slot.Substring(0, 1) = "D")
+            else if (Slot.Substring(0, 1) == "D")
             {
                 Quantity -= 1;
                 return "Chew Chew, Yum!";
