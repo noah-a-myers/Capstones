@@ -34,12 +34,13 @@ namespace Capstone.Classes
                         Console.WriteLine("(1) Feed Money");
                         Console.WriteLine("(2) Select Product");
                         Console.WriteLine("(3) Finish Transaction");
-                        Console.WriteLine($"Current Money Provided: {string.Format}");
-                        purchaseMenuOption = 
+                        Console.WriteLine($"Current Money Provided: ");//string.Format()
+                        //purchaseMenuOption = 
                         break;
                     case "3":
 
                     default:
+                        break;
                 }
 
                 // Purchase menu cases
@@ -53,6 +54,7 @@ namespace Capstone.Classes
                         break;
 
                     default:
+                        break;
                 }
 
                 Console.ReadLine();
