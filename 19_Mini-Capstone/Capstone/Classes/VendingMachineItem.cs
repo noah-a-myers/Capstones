@@ -7,7 +7,6 @@ namespace Capstone.Classes
     public class VendingMachineItem
     {
 
-        // each slot represented here
 
     }
 }
