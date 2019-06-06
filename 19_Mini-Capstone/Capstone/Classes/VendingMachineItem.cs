@@ -6,6 +6,6 @@ namespace Capstone.Classes
 {
     public class VendingMachineItem
     {
-
+        
     }
 }
