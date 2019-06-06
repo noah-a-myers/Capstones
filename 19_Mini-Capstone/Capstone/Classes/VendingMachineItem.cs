@@ -13,6 +13,7 @@ namespace Capstone.Classes
         
         
 
+
         public string Consume()
         {
             if (Slot.Substring(0, 1) == "A")

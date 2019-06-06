@@ -26,41 +26,66 @@ namespace Capstone.Classes
                 switch (mainMenuOption)
                 {
                     case "1":
-                        // display ItemName Price Quantity 
+                        // todo display ItemName Price Quantity 
                         Console.WriteLine($"");
                         break;
+
                     case "2":
                         // display purchase menu options
                         Console.WriteLine("(1) Feed Money");
                         Console.WriteLine("(2) Select Product");
                         Console.WriteLine("(3) Finish Transaction");
-                        Console.WriteLine($"Current Money Provided: ");//string.Format()
-                        //purchaseMenuOption = 
+                        Console.WriteLine("Current Money Provided: {classContainingMethod.CurrentMoneyProvided}");
+                        purchaseMenuOption = Console.ReadLine();
                         break;
+
                     case "3":
+                        // end
+                        done = true;
+                        break;
 
                     default:
                         break;
                 }
 
-                // Purchase menu cases
-                switch (purchaseMenuOption)
+                
+
+                // if case 2 selected in main menu
+                if (mainMenuOption == "2")
                 {
-                    case "1":
-                        break;
-                    case "2":
-                        break;
-                    case "3":
-                        break;
+                    bool purchaseDone = false;
+                    while (!purchaseDone)
+                    {
+                        // Purchase menu cases
+                        switch (purchaseMenuOption)
+                        {
+                            case "1":
+                                // feed money
+                                Console.WriteLine("classContainingMethod.FeedMoney()");
+                                break;
 
-                    default:
-                        break;
+                            case "2":
+                                // select product
+                                Console.WriteLine("classContainingMethod.SelectProduct()");
+                                break;
+
+                            case "3":
+                                // finish transaction
+                                Console.WriteLine("classContainingMethod.FinishTransaction()");
+                                purchaseDone = true;
+                                break;
+
+                            default:
+                                break;
+                        }
+                    }
                 }
+
+                
 
                 Console.ReadLine();
 
             }
-
         }
     }
 }
